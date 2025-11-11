@@ -1,0 +1,137 @@
+:root {
+    --bg: #0b0b0f;
+    --card: #15151c;
+    --text: #eaeaea;
+    --muted: #9aa0a6;
+    --accent: #4c8bf5;
+    --border: #2a2a33;
+}
+
+@media (prefers-color-scheme: light){
+    :root {
+        --bg: #fafafa;
+        --card: #ffffff;
+        --text: #1a1a1a;
+        --muted: #616161;
+        --border: #e5e7eb;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height:1.5;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.sub {
+    color: var(--muted);
+    margin-top: 0.25rem;
+}
+
+.container {
+    max-width: 980px;
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.controls form{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.controls input{
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+.controls button{
+    padding: 0.55rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.controls button:hover{
+    opacity: 0.9;
+}
+
+.controls button[type="button"]{
+    background: transparent;
+    color: var(--text);
+}
+
+.error{
+    margin-top: 0.5rem;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.label {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.split{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.list{
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.list.tips li{
+    color: var(--muted);
+}
+
+.alerts {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.muted{
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
