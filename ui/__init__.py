@@ -3,10 +3,10 @@ from flask import Blueprint, render_template, request, jsonify
 from service.weather import forecast, alerts_by_state
 from service.ai import outfit_from_now_and_hourly
 
-ui_bp = Blueprint('ui',
-                   __name__, 
+ui_bp = Blueprint('ui', __name__, 
                    template_folder = 'templates',
-                   static_folder = 'static')
+                   static_folder = 'static',
+                   static_url_path='/ui/static')
 
 @ui_bp.get('/')
 def home():

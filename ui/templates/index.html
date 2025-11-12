@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="card controls">
-    <form id="ssearchForm">
-        <label>Lat <input id="lat" placeholder="33.6846" inputmode="decimal"></label>
-        <label>Lon <input id="lon" placegolder="-117.8265" inputmode="demical"></label>
+    <form id="searchForm">
+        <label>Latitude <input id="lat" placeholder="33.6846" inputmode="decimal"></label>
+        <label>Longitude <input id="lon" placeholder="-117.8265" inputmode="decimal"></label>
         <button type="submit">Load</button>
         <button type="button" id="geoBtn">Use my location</button>
     </form>

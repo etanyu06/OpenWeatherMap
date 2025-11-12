@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="header">
-        <h1>Open Weather Map</h1>
-        <p class="sub">NWS data + smart outfit suggestions</p>
+        <h1>Open Weather Map (US Only)</h1>
+        <p class="sub">National Weather Service data + smart outfit suggestions</p>
     </header>
 
     <main class="container">
@@ -19,9 +19,9 @@
     </main>
 
     <footer class="footer">
-        <small>Data from weather,gov • Demo app</small>
+        <small>Data from weather.gov • Personal Project</small>
     </footer>
 
-    <script src="{{url_for('ui.static', filename='app.js')}}"></script>
+    <script src="{{ url_for('ui.static', filename='app.js') }}"></script>
 </body>
 </html>
