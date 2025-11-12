@@ -1,2 +1,2 @@
 # OpenWeatherMap
-This is a Weather app, graning users data on current real-time weather, alerts, and other useful information. The API is taken from the Nation Weather Service (NWS), coded using Python, JavaScript, CSS, and HTML.
+This is a Weather app, graning users data on current real-time weather, alerts, and other useful information. The API is taken from the Nation Weather Service (NWS), coded using Python, JavaScript, Flask, CSS, and HTML.
