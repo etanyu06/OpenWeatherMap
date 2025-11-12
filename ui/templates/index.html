@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card controls">
+    <form id="ssearchForm">
+        <label>Lat <input id="lat" placeholder="33.6846" inputmode="decimal"></label>
+        <label>Lon <input id="lon" placegolder="-117.8265" inputmode="demical"></label>
+        <button type="submit">Load</button>
+        <button type="button" id="geoBtn">Use my location</button>
+    </form>
+    <div id="error" class="error hidden"></div>
+</section>
+
+<section id="nowCard" class="card"></section>
+<section id="outfitCard" class="card"></section>
+
+<section class="card">
+    <h3>Next 24 hours</h3>
+    <canvas id="tempChart" height="100"></canvas>
+</section>
+
+<section id="alerts" class="card hidden"></section>
+{% endblock %}
